@@ -14,9 +14,9 @@ The game can be played with one player versus the
 computer, or up to four players head-to-head. Simply
 press 'A' on the title screen to join the game.
 Other players can join as long as the 5-second 
-countdown doesn't run out. The 'a', 'f', 'h' and 'l'
-keys are mapped to players 1-4. Alternately, you can
-play with Xbox controllers.
+countdown doesn't run out. The 'a', 'd', 'g', 'j' 
+and 'l' keys are mapped to players 1-5. Alternately,
+you can play with Xbox controllers.
 
 
 Controls
