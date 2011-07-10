@@ -15,7 +15,8 @@ local player_joysticks = {
   glfw.JOYSTICK_1,
   glfw.JOYSTICK_2,
   glfw.JOYSTICK_3,
-  glfw.JOYSTICK_4
+  glfw.JOYSTICK_4,
+  glfw.JOYSTICK_5
 }
 
 function held(i)
@@ -39,7 +40,8 @@ game.actors.new_generic('the_one_button', function ()
     states = {false, false, false, false, false}
     for i = 1, 5 do
       states[i] =
-        game.keyboard.key_held(player_keys[i])
+        game.keyboard.key_held(player_keys[i]) or
+        glfw.GetJoystickButtons(player_joysticks[i], 1)[1] == glfw.PRESS
     end
   end
 end)
