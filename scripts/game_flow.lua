@@ -21,7 +21,12 @@ local POSITIONS = {
   {CENTER + v2.unit(math.pi*3/4) * RADIUS,
    CENTER + v2.unit(math.pi*1/4) * RADIUS,
    CENTER + v2.unit(math.pi*5/4) * RADIUS,
-   CENTER + v2.unit(math.pi*7/4) * RADIUS}
+   CENTER + v2.unit(math.pi*7/4) * RADIUS},
+  {CENTER + v2.unit(math.pi*3/5) * RADIUS,
+   CENTER + v2.unit(math.pi*1/5) * RADIUS,
+   CENTER + v2.unit(math.pi*5/5) * RADIUS,
+   CENTER + v2.unit(math.pi*7/5) * RADIUS,
+   CENTER + v2.unit(math.pi*9/5) * RADIUS}
 }
 
 local state = 'init'
@@ -89,17 +94,20 @@ function update()
     local offset = v2(-75, 0)
     selectors = {
       game.actors.new(blueprints.selection_factory,
-        {'transform', pos=offset+v2(1024/2 - dist/2 - dist, 768/2), facing=v2(0, 1)},
+        {'transform', pos=offset+v2(1024/2 - 2*dist, 768/2), facing=v2(0, 1)},
         {'selector', player=1}),
       game.actors.new(blueprints.selection_factory,
-        {'transform', pos=offset+v2(1024/2 - dist/2, 768/2), facing=v2(0, 1)},
+        {'transform', pos=offset+v2(1024/2 - dist, 768/2), facing=v2(0, 1)},
         {'selector', player=2}),
       game.actors.new(blueprints.selection_factory,
-        {'transform', pos=offset+v2(1024/2 + dist/2, 768/2), facing=v2(0, 1)},
+        {'transform', pos=offset+v2(1024/2, 768/2), facing=v2(0, 1)},
         {'selector', player=3}),
       game.actors.new(blueprints.selection_factory,
-        {'transform', pos=offset+v2(1024/2 + dist + dist/2, 768/2), facing=v2(0, 1)},
-        {'selector', player=4})
+        {'transform', pos=offset+v2(1024/2 + dist, 768/2), facing=v2(0, 1)},
+        {'selector', player=4}),
+      game.actors.new(blueprints.selection_factory,
+        {'transform', pos=offset+v2(1024/2 + 2*dist, 768/2), facing=v2(0, 1)},
+        {'selector', player=5})
     }
     splash = game.actors.new(blueprints.splash)
 

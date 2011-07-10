@@ -5,8 +5,9 @@ local states = {}
 
 local player_keys = {
   string.byte('A'),
-  string.byte('F'),
-  string.byte('H'),
+  string.byte('D'),
+  string.byte('G'),
+  string.byte('J'),
   string.byte('L')
 }
 
@@ -18,28 +19,27 @@ local player_joysticks = {
 }
 
 function held(i)
-  assert(1 <= i and i <= 4)
+  assert(1 <= i and i <= 5)
   return states[i]
 end
 
 function pressed(i)
-  assert(1 <= i and i <= 4)
+  assert(1 <= i and i <= 5)
   return states[i] and not old_states[i]
 end
 
 function released(i)
-  assert(1 <= i and i <= 4)
+  assert(1 <= i and i <= 5)
   return not states[i] and old_states[i]
 end
 
 game.actors.new_generic('the_one_button', function ()
   function update_setup ()
     old_states = states
-    states = {false, false, false, false}
-    for i = 1, 4 do
+    states = {false, false, false, false, false}
+    for i = 1, 5 do
       states[i] =
-        game.keyboard.key_held(player_keys[i]) or
-        glfw.GetJoystickButtons(player_joysticks[i], 1)[1] == glfw.PRESS
+        game.keyboard.key_held(player_keys[i])
     end
   end
 end)

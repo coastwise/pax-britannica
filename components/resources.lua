@@ -8,28 +8,32 @@ fighter_sprites = {
   graphics.sprite_from_image('sprites/fighter_p1.png', nil, 'center'),
   graphics.sprite_from_image('sprites/fighter_p2.png', nil, 'center'),
   graphics.sprite_from_image('sprites/fighter_p3.png', nil, 'center'),
-  graphics.sprite_from_image('sprites/fighter_p4.png', nil, 'center')
+  graphics.sprite_from_image('sprites/fighter_p4.png', nil, 'center'),
+  graphics.sprite_from_image('sprites/fighter_p5.png', nil, 'center')
 }
 
 bomber_sprites = {
   graphics.sprite_from_image('sprites/bomber_p1.png', nil, 'center'),
   graphics.sprite_from_image('sprites/bomber_p2.png', nil, 'center'),
   graphics.sprite_from_image('sprites/bomber_p3.png', nil, 'center'),
-  graphics.sprite_from_image('sprites/bomber_p4.png', nil, 'center')
+  graphics.sprite_from_image('sprites/bomber_p4.png', nil, 'center'),
+  graphics.sprite_from_image('sprites/bomber_p5.png', nil, 'center')
 }
 
 frigate_sprites = {
   graphics.sprite_from_image('sprites/frigate_p1.png', nil, 'center'),
   graphics.sprite_from_image('sprites/frigate_p2.png', nil, 'center'),
   graphics.sprite_from_image('sprites/frigate_p3.png', nil, 'center'),
-  graphics.sprite_from_image('sprites/frigate_p4.png', nil, 'center')
+  graphics.sprite_from_image('sprites/frigate_p4.png', nil, 'center'),
+  graphics.sprite_from_image('sprites/frigate_p5.png', nil, 'center')
 }
 
 factory_sprites = {
   graphics.sprite_from_image('sprites/factory_p1.png', nil, 'center'),
   graphics.sprite_from_image('sprites/factory_p2.png', nil, 'center'),
   graphics.sprite_from_image('sprites/factory_p3.png', nil, 'center'),
-  graphics.sprite_from_image('sprites/factory_p4.png', nil, 'center')
+  graphics.sprite_from_image('sprites/factory_p4.png', nil, 'center'),
+  graphics.sprite_from_image('sprites/factory_p5.png', nil, 'center')
 }
 
 factory_light_damage_sprites = {

@@ -9,7 +9,7 @@ function draw()
   gl.glPopMatrix()
   
   gl.glPushMatrix()
-    gl.glTranslated(1024/2 + 265, 768/2, 0)
+    gl.glTranslated(1024/2 + 330, 768/2, 0)
     game.resources.credits_sprite:draw()
   gl.glPopMatrix()
   
